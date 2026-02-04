@@ -1,0 +1,241 @@
+.App {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.calendar-container, 
+.time-slots-container, 
+.booking-form-container,
+.admin-panel {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  margin-bottom: 20px;
+}
+
+/* Custom styles for react-datepicker */
+.custom-calendar {
+  border: none !important;
+  width: 100% !important;
+}
+
+.react-datepicker {
+  border: none !important;
+  font-family: inherit !important;
+}
+
+.react-datepicker__header {
+  background-color: white !important;
+  border-bottom: 1px solid #dee2e6 !important;
+}
+
+.react-datepicker__day--selected {
+  background-color: #0d6efd !important;
+  color: white !important;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: #cfe2ff !important;
+}
+
+.react-datepicker__day:hover {
+  background-color: #f8f9fa !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .calendar-container, 
+  .time-slots-container, 
+  .booking-form-container,
+  .admin-panel {
+    padding: 16px;
+    margin-bottom: 15px;
+  }
+}
+
+/* Bootstrap Icon enhancements */
+.bi {
+    vertical-align: -0.125em;
+}
+
+/* Custom badge styles */
+.badge-icon {
+    width: 32px;
+    height: 32px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Status indicators */
+.status-available {
+    color: #28a745;
+}
+
+.status-booked {
+    color: #dc3545;
+}
+
+.status-pending {
+    color: #ffc107;
+}
+
+/* Admin panel specific */
+.admin-stats-card {
+    transition: transform 0.2s;
+    border: none;
+}
+
+.admin-stats-card:hover {
+    transform: translateY(-2px);
+}
+
+/* Booking table */
+.booking-avatar {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Highlight today's date in calendar */
+.highlight-today {
+    background-color: #e3f2fd !important;
+    border: 2px solid #2196f3 !important;
+    border-radius: 50% !important;
+}
+
+/* Selected date styling */
+.react-datepicker__day--selected {
+    background-color: #0d6efd !important;
+    color: white !important;
+    border-radius: 50% !important;
+}
+
+/* Hover effect */
+.react-datepicker__day:hover {
+    background-color: #f8f9fa !important;
+    border-radius: 50% !important;
+}
+
+/* Disable past dates */
+.react-datepicker__day--disabled {
+    color: #ccc !important;
+    cursor: not-allowed !important;
+}
+
+/* Admin Panel Styles */
+.admin-stats-card {
+    transition: all 0.3s ease;
+    border: none !important;
+    height: 100%;
+}
+
+.admin-stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1) !important;
+}
+
+.admin-stats-card .bi {
+    font-size: 1.5rem;
+}
+
+/* Calendar Month View */
+.calendar-day-card {
+    min-height: 80px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #dee2e6 !important;
+}
+
+.calendar-day-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.calendar-day-card.today {
+    border: 2px solid #0d6efd !important;
+    background-color: #e3f2fd !important;
+}
+
+/* Booking Status Colors */
+.status-badge {
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.status-confirmed {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.status-pending {
+    background-color: #fff3cd;
+    color: #664d03;
+}
+
+.status-cancelled {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+/* Table Improvements */
+.table-hover tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(13, 110, 253, 0.05) !important;
+}
+
+/* Pagination */
+.pagination .page-item.active .page-link {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    border: none;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: #0d6efd;
+    border-bottom: 3px solid #0d6efd;
+}
+
+/* Search and Filter */
+.input-group-text {
+    background-color: #f8f9fa;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .admin-stats-card .fs-4 {
+        font-size: 1.25rem !important;
+    }
+    
+    .calendar-day-card {
+        min-height: 60px;
+        padding: 0.25rem !important;
+    }
+    
+    .table-responsive {
+        font-size: 0.875rem;
+    }
+}
